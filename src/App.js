@@ -21,14 +21,14 @@ const Hands = (props) => {
 export default () => {
 
   const [items, setItems] = useState([
-    { id: 1, name: "rock", short: "r", src: "http://www.pontusweb.se/rockpaperscissorsreact/rock.png", class: "carousel-item active", picture: "rock.png" },
-    { id: 2, name: "paper", short: "p", src: "http://www.pontusweb.se/rockpaperscissorsreact/paper.png", class: "carousel-item", picture: "paper.png" },
-    { id: 3, name: "scissors", short: "s", src: "http://www.pontusweb.se/rockpaperscissorsreact/scissors.png", class: "carousel-item", picture: "scissors.png" }
+    { id: 1, name: "rock", short: "r", src: "https://pontusweb.se/RockPaperScissorsReact/rock.png", class: "carousel-item active", picture: "rock.png" },
+    { id: 2, name: "paper", short: "p", src: "https://pontusweb.se/RockPaperScissorsReact/paper.png", class: "carousel-item", picture: "paper.png" },
+    { id: 3, name: "scissors", short: "s", src: "https://pontusweb.se/RockPaperScissorsReact/scissors.png", class: "carousel-item", picture: "scissors.png" }
 
   ])
   const [playerScore, setPlayerScore] = useState(0)
   const [computerScore, setComputerScore] = useState(0)
-  const [computerPic, setComputerPic] = useState("http://pontusweb.se/rockpaperscissorsreact/unnamed.png");
+  const [computerPic, setComputerPic] = useState("https://pontusweb.se/RockPaperScissorsReact/unnamed.png");
   const [computerChoice, setComputerChoice] = useState()
   const whoWon = (player, computer) => {
     if (player === computer)
@@ -81,7 +81,10 @@ export default () => {
             </a>
           </div></div>
         <hr />
-        <div><img src={computerPic} /></div>
+        <div className="container3">
+  <div className="left"><h4>Computer hand:</h4></div>
+  <div className="right"> <img src={computerPic} id="computerpic"/></div>
+</div>
       </div>
     </React.Fragment>
   )
@@ -89,7 +92,3 @@ export default () => {
 }
 
 
-<div className="container3">
-  <div className="left"><h4>Computer hand:</h4></div>
-  <div className="right"> <img src={computerPic} id="computerpic"/></div>
-</div>
