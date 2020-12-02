@@ -21,9 +21,9 @@ const Hands = (props) => {
 export default () => {
 
   const [items, setItems] = useState([
-    { id: 1, name: "rock", short: "r", src: "http://www.pontusweb.se/rock.png", class: "carousel-item active", picture: "rock.png" },
-    { id: 2, name: "paper", short: "p", src: "http://www.pontusweb.se/paper.png", class: "carousel-item", picture: "paper.png" },
-    { id: 3, name: "scissors", short: "s", src: "http://www.pontusweb.se/scissors.png", class: "carousel-item", picture: "scissors.png" }
+    { id: 1, name: "rock", short: "r", src: "https://www.pontusweb.se/rock.png", class: "carousel-item active", picture: "rock.png" },
+    { id: 2, name: "paper", short: "p", src: "https://www.pontusweb.se/paper.png", class: "carousel-item", picture: "paper.png" },
+    { id: 3, name: "scissors", short: "s", src: "https://www.pontusweb.se/scissors.png", class: "carousel-item", picture: "scissors.png" }
 
   ])
   const [playerScore, setPlayerScore] = useState(0)
