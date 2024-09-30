@@ -21,14 +21,14 @@ const Hands = (props) => {
 export default () => {
 
   const [items, setItems] = useState([
-    { id: 1, name: "rock", short: "r", src: "https://pontusweb.se/RockPaperScissorsReact/rock.png", class: "carousel-item active", picture: "rock.png" },
-    { id: 2, name: "paper", short: "p", src: "https://pontusweb.se/RockPaperScissorsReact/paper.png", class: "carousel-item", picture: "paper.png" },
-    { id: 3, name: "scissors", short: "s", src: "https://pontusweb.se/RockPaperScissorsReact/scissors.png", class: "carousel-item", picture: "scissors.png" }
+    { id: 1, name: "rock", short: "r", src: "https://yohawnsun.github.io/RockPaperScissorsReact/rock.png", class: "carousel-item active", picture: "rock.png" },
+    { id: 2, name: "paper", short: "p", src: "https://yohawnsun.github.io/RockPaperScissorsReact/paper.png", class: "carousel-item", picture: "paper.png" },
+    { id: 3, name: "scissors", short: "s", src: "https://yohawnsun.github.io/RockPaperScissorsReact/scissors.png", class: "carousel-item", picture: "scissors.png" }
 
   ])
   const [playerScore, setPlayerScore] = useState(0)
   const [computerScore, setComputerScore] = useState(0)
-  const [computerPic, setComputerPic] = useState("https://pontusweb.se/RockPaperScissorsReact/unnamed.png");
+  const [computerPic, setComputerPic] = useState("https://yohawnsun.github.io/RockPaperScissorsReact/unnamed.png");
   const [computerChoice, setComputerChoice] = useState()
   const whoWon = (player, computer) => {
     if (player === computer)
